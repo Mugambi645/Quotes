@@ -18,7 +18,7 @@ export class QuoteDetailComponent implements OnInit {
    this.quote.likes += 1;
  }
  downVote() {
-   this.quote.likes -= 1;
+   this.quote.dislikes += 1;
  }
   constructor() { }
 
