@@ -7,8 +7,8 @@ import { Quote } from "../quote";
 })
 export class QuoteComponent implements OnInit {
   quote: Quote[] = [
-    {name: "Dance", quote: "Lets dance together",quoteAuthor: "ian"},
-    {name: "Sing", quote: "Lets sing together", quoteAuthor: "john"}
+    {name: "Dance", description: "Lets dance together",quoteAuthor: "ian"},
+    {name: "Sing", description: "Lets sing together", quoteAuthor: "john"}
 
   ]
   constructor() { }
