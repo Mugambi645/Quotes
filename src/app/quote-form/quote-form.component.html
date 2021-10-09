@@ -1,8 +1,8 @@
 <div class="container-fluid">
-    <div class="card">
+    <div class="card" style="border-radius: 10%;">
     <h2 class="text-center">Create a new Quote</h2>
 
-    <form #quoteForm = "ngForm">
+    <form style="border-radius: 30%;" (ngSubmit) = "submitQuote()" #quoteForm = "ngForm">
         <div class="form-group">
   
             <label for="name">Genre</label>
@@ -41,6 +41,9 @@
     <p>AuthorName is required</p>
   </div>
         </div>
+
+        <button style="margin: 2rem; margin-left: 12rem; text-align: center;" type="submit" class="btn btn-success">Add Quote</button>
+
     </form>
   </div>
   </div>

@@ -26,6 +26,10 @@ export class QuoteComponent implements OnInit {
       }
     }
   }
+  //add quote
+  addNewQuote(quote: any) {
+    this.quote.push(quote)
+  }
   constructor() { }
 
   ngOnInit(): void {
