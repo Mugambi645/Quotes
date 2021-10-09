@@ -7,8 +7,8 @@ import { Quote } from "../quote";
 })
 export class QuoteComponent implements OnInit {
   quote: Quote[] = [
-    new Quote("Dance", "Dance poetry", "Lets dance together", "ian", 0, 0),
-    new Quote("Sing", "song poetry", "Lets sing together", "john", 0, 0)
+    new Quote("Dance", "Dance poetry", "Lets dance together", "ian", "", 0, 0),
+    new Quote("Sing", "song poetry", "Lets sing together", "john", "", 0, 0)
 
   ]
   //hide and reveal info
