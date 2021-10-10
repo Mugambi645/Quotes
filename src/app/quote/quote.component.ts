@@ -6,6 +6,7 @@ import { Quote } from "../quote";
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+  title:string = "Quote App";
   quote: Quote[] = [
     new Quote("Science", "Purpose of science", "Science is the great antidote to the poison of enthusiasm and superstition", "ian", "Adam Smith", 0, 0, new Date(2020, 10, 4)),
     new Quote("Science", "Discovery", "No great discovery was ever made without a bold guess.", "john", "Sir Isaac Newton", 0, 0, new Date(2019,5,10)),
