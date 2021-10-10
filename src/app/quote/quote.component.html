@@ -1,24 +1,32 @@
-<div class="container">
+<div class="overlay">
+
     <h1 style="color: white;">My Quotes</h1>
     <hr>
+    <div class="container-fluid">
+    <div class= "row">
+      <div id="colFixed" class="col-sm-3">
+        <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
   
-    <div class="row">
-      <div class="col-md-6">
-          
-        <div *ngFor='let quote of quote;let i = index'>
-          <div>
-              <div class="card">
-                  <div class="card-body">
-            <h6 class="card-title"  id={{i}} appHighestVote >{{quote.genre}}</h6>
-            <button (click) = "toggleDetails(i)">Check details</button>
+      </div>
+      <div class="col-sm-9">
+        <div class="all-cards">
+        <div *ngFor='let quote of quote;let i = index' class="card" style="width: 24rem;">
+          <div class="card-body">
+              <h6 class="card-title"  id={{i}} appHighestVote >{{quote.title}} <button id="see-more" class="btn btn-info btn-sm" (click) = "toggleDetails(i)">See More</button>
+              </h6>
+              <p class="card-text" id="param">{{quote.quote}}</p>
+            
             <app-quote-detail *ngIf = "quote.showDescription" [quote]='quote' (isComplete) = "deleteQuote($event, i)"></app-quote-detail>
+            <span class="card-subtitle mb-2">Posted by: <span id="name">{{quote.authorName}}</span><span id="date">on: <span id="datecolor">{{quote.dateCreated|date:'short'}}</span></span></span>
+             
           </div>
           </div>
-          </div>
-          </div>
+          
+        </div>
         </div>
       <div style="float: right;" class="col-md-6">
-        <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
+        
       </div>
     </div>
+  </div>
   </div>

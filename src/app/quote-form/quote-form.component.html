@@ -1,5 +1,4 @@
 <div class="container-fluid">
-    <div class="card" style="border-radius: 10%;">
     <h2 class="text-center">Create a new Quote</h2>
 
     <form style="border-radius: 30%;" (ngSubmit) = "submitQuote()" #quoteForm = "ngForm">
@@ -40,10 +39,11 @@
   <div [hidden]="authorName.valid || authorName.pristine" class="alert alert-danger">
     <p>AuthorName is required</p>
   </div>
+  
         </div>
 
-        <button style="margin: 2rem; margin-left: 12rem; text-align: center;" type="submit" class="btn btn-success">Add Quote</button>
-
+        <button id="addButton" type="submit" class="btn btn-success">Add Quote</button>
+        {{newQuote.quote}}
     </form>
-  </div>
+  
   </div>

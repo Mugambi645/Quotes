@@ -7,8 +7,12 @@ import { Quote } from "../quote";
 })
 export class QuoteComponent implements OnInit {
   quote: Quote[] = [
-    new Quote("Dance", "Dance poetry", "Lets dance together", "ian", "", 0, 0),
-    new Quote("Sing", "song poetry", "Lets sing together", "john", "", 0, 0)
+    new Quote("Science", "Purpose of science", "Science is the great antidote to the poison of enthusiasm and superstition", "ian", "Adam Smith", 0, 0, new Date(2020, 10, 4)),
+    new Quote("Science", "Discovery", "No great discovery was ever made without a bold guess.", "john", "Sir Isaac Newton", 0, 0, new Date(2019,5,10)),
+    new Quote("Dreams", "Dreams", "Dreams are often most profound when they seem the most crazy", "Tina", "Sigmund freud", 0, 0, new Date(2020, 10,4)),
+    new Quote("Life", "Value of life", "A man who dares waste one hour of time has not discovered the value of life", "Charles", "Charles Darwin", 0, 0, new Date(2021, 5, 7)),
+    new Quote("Love", "Nature", "The love of all living creatures is the most notable attribute of man", "Mitchelle", "Charles Darwin", 0, 0, new Date(2021, 20, 8)),
+    new Quote("Mindset", "Freedom of mind", "Although i cannot move and i have to speak through a computer, in my mind i am free", "David", "Stephen Hawking", 0, 0, new Date(2018, 5,7))
 
   ]
   //hide and reveal info
@@ -28,6 +32,9 @@ export class QuoteComponent implements OnInit {
   }
   //add quote
   addNewQuote(quote: any) {
+    let quoteSize = this.quote.length;
+    quote.id = quoteSize+1;
+    quote.completeDate = new Date(quote.completeDate)
     this.quote.push(quote)
   }
   constructor() { }
