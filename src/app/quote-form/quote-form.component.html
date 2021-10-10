@@ -1,16 +1,16 @@
 <div class="container-fluid">
     <h2 class="text-center">Create a new Quote</h2>
 
-    <form style="border-radius: 30%;" (ngSubmit) = "submitQuote()" #quoteForm = "ngForm">
+    <form style="border-radius: 30%;" (ngSubmit) = "submitQuote(quoteForm)" #quoteForm = "ngForm">
         <div class="form-group">
   
             <label for="name">Genre</label>
             <input type="text" required class="form-control" id="genre" [(ngModel)] = "newQuote.genre" name="genre" #genre = "ngModel">
-
+            <div [hidden]="genre.valid || genre.pristine" class="alert alert-danger">
+              <p>Genre is required</p>
+            </div>
+          
   {{newQuote.genre}}
-  <div [hidden]="genre.valid || genre.pristine" class="alert alert-danger">
-    <p>Genre is required</p>
-  </div>
 
         </div>
         <div class="form-group">
