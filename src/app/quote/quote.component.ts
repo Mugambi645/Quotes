@@ -8,12 +8,12 @@ import { Quote } from "../quote";
 export class QuoteComponent implements OnInit {
   title:string = "Quote App";
   quote: Quote[] = [
-    new Quote( "Science and superstition", "Adam Smith", "Science is the great antidote to the poison of enthusiasm and superstition", "ian",  0, 0, new Date(2020, 10, 4)),
-    new Quote("Discovery", "No great discovery was ever made without a bold guess.", "john", "Sir Isaac Newton", 0, 0, new Date(2019,5,10)),
-    new Quote("Dreams", "Dreams are often most profound when they seem the most crazy", "Tina", "Sigmund freud", 0, 0, new Date(2020, 10,4)),
-    new Quote("Value of life", "A man who dares waste one hour of time has not discovered the value of life", "Charles", "Charles Darwin", 0, 0, new Date(2021, 5, 7)),
-    new Quote("Nature", "The love of all living creatures is the most notable attribute of man", "Mitchelle", "Charles Darwin", 0, 0, new Date(2021, 20, 8)),
-    new Quote( "Freedom of mind", "Although i cannot move and i have to speak through a computer, in my mind i am free", "David", "Stephen Hawking", 0, 0, new Date(2018, 5,7))
+    new Quote( "Science and Superstition", "Adam Smith", "Science is the great antidote to the poison of enthusiasm and superstition", "ian",  0, 0, new Date(2020, 10, 4)),
+    new Quote("Discovery", "Sir Isaac Newton", "No great discovery was ever made without a bold guess.", "john",  0, 0, new Date(2019,5,10)),
+    new Quote("Dreams", "Sigmund freud", "Dreams are often most profound when they seem the most crazy", "Tina",  0, 0, new Date(2020, 10,4)),
+    new Quote("Value Of Life", "Charles Darwin", "A man who dares waste one hour of time has not discovered the value of life", "Charles",  0, 0, new Date(2021, 5, 7)),
+    new Quote("Nature", "Charles Darwin", "The love of all living creatures is the most notable attribute of man", "Mitchelle", 0, 0, new Date(2021, 20, 8)),
+    new Quote( "Freedom Of Mind", "Stephen Hawking", "Although i cannot move and i have to speak through a computer, in my mind i am free", "David",  0, 0, new Date(2018, 5,7))
 
   ]
   //hide and reveal info
