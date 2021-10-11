@@ -1,23 +1,25 @@
-<div class="container-fluid">
-    <h2 class="text-center">Create a new Quote</h2>
 
+<div class="container-fluid">
+    <h2 style="color: white;" class="text-center">Create a new Quote</h2>
+
+   
     <form style="border-radius: 30%;" (ngSubmit) = "submitQuote(quoteForm)" #quoteForm = "ngForm">
-        <div class="form-group">
-  
+      
+          <div class="form-group">
             <label for="name">Name</label>
             <input type="text" required class="form-control" id="name" [(ngModel)] = "newQuote.name" name="name" #name = "ngModel">
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
               <p>Name is required</p>
             </div>
           
-  {{newQuote.name}}
+  <p id="bindName">{{newQuote.name}}</p>
 
         </div>
         <div class="form-group">
   
             <label for="title">Title</label>
             <input type="text" id="title" required class="form-control" rows="4" [(ngModel)] = "newQuote.title" name= "title" #title = "ngModel" required>
-  {{newQuote.title}}
+ <p id="bindTitle"> {{newQuote.title}}</p>
   <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
     <p>Title is required</p>
   </div>
@@ -26,7 +28,7 @@
   
             <label for="quote">Quote</label>
             <textarea class="form-control" id="quote" rows="4" [(ngModel)] = "newQuote.quote" name="quote" #quote = "ngModel" required></textarea>
-  {{newQuote.quote}}
+  <p id="bindQuote">{{newQuote.quote}}</p>
   <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
     <p>Name is required</p>
   </div>
@@ -35,16 +37,18 @@
   
             <label for="postedBy">Posted By</label>
             <input type="text" required class="form-control" id="postedBy" rows="4" [(ngModel)] = "newQuote.userName" name="userName" #userName = "ngModel"  required>
-  {{newQuote.userName}}
+  <p id="bindUsername">{{newQuote.userName}}</p>
   <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
     <p>UserName is required</p>
   </div>
 
 
         </div>
+        
 
         <button id="addButton" type="submit" class="btn btn-success">Add Quote</button>
        
-    </form>
+ 
+
   
-  </div>
+

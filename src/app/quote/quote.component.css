@@ -19,7 +19,7 @@ h1{
     font-family: 'Architects Daughter', cursive;
   }
   .overlay{
-    background-color: teal;
+    background-color: transparent;
     border-radius: 5px;
     margin-top:4%;
     margin-left: 4%;

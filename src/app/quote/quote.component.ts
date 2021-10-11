@@ -8,12 +8,12 @@ import { Quote } from "../quote";
 export class QuoteComponent implements OnInit {
   title:string = "Quote App";
   quote: Quote[] = [
-    new Quote( "Science and Superstition", "Adam Smith", "Science is the great antidote to the poison of enthusiasm and superstition", "ian",  0, 0, new Date(2020, 10, 4)),
-    new Quote("Discovery", "Sir Isaac Newton", "No great discovery was ever made without a bold guess.", "john",  0, 0, new Date(2019,5,10)),
-    new Quote("Dreams", "Sigmund freud", "Dreams are often most profound when they seem the most crazy", "Tina",  0, 0, new Date(2020, 10,4)),
-    new Quote("Value Of Life", "Charles Darwin", "A man who dares waste one hour of time has not discovered the value of life", "Charles",  0, 0, new Date(2021, 5, 7)),
-    new Quote("Nature", "Charles Darwin", "The love of all living creatures is the most notable attribute of man", "Mitchelle", 0, 0, new Date(2021, 20, 8)),
-    new Quote( "Freedom Of Mind", "Stephen Hawking", "Although i cannot move and i have to speak through a computer, in my mind i am free", "David",  0, 0, new Date(2018, 5,7))
+    new Quote( "Science and Superstition", "Adam Smith", "Science is the great antidote to the poison of enthusiasm and superstition", "ian",  50, 10, new Date(2020, 10, 4)),
+    new Quote("Discovery", "Sir Isaac Newton", "No great discovery was ever made without a bold guess.", "john",  20, 5, new Date(2019,5,10)),
+    new Quote("Dreams", "Sigmund freud", "Dreams are often most profound when they seem the most crazy", "Tina",  22, 11, new Date(2020, 10,4)),
+    new Quote("Value Of Life", "Charles Darwin", "A man who dares waste one hour of time has not discovered the value of life", "Charles",  13, 5, new Date(2021, 5, 7)),
+    new Quote("Nature", "Charles Darwin", "The love of all living creatures is the most notable attribute of man", "Mitchelle", 40, 20, new Date(2021, 20, 8)),
+    new Quote( "Freedom Of Mind", "Stephen Hawking", "Although i cannot move and i have to speak through a computer, in my mind i am free", "David",  60, 2, new Date(2018, 5,7))
 
   ]
   get quotesSort() {

@@ -20,7 +20,7 @@
     padding-top: 2%;
   }
   .container-fluid{
-    background-color: rgba(0, 0, 0, 0.374);
+    background-color: darkolivegreen;
     border-radius: 40px;
     padding-bottom: 5%;
     box-shadow: 2px 2px 3px 2px black;
@@ -32,4 +32,16 @@
     margin-left: 4rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+  #bindName {
+    color: wheat;
+  }
+  #bindUsername {
+    color: wheat;
+  }
+  #bindQuote {
+    color: wheat;
+  }
+  #bindTitle {
+    color: wheat;
   }
