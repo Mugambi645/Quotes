@@ -4,13 +4,13 @@
     <form style="border-radius: 30%;" (ngSubmit) = "submitQuote(quoteForm)" #quoteForm = "ngForm">
         <div class="form-group">
   
-            <label for="name">Genre</label>
-            <input type="text" required class="form-control" id="genre" [(ngModel)] = "newQuote.genre" name="genre" #genre = "ngModel">
-            <div [hidden]="genre.valid || genre.pristine" class="alert alert-danger">
-              <p>Genre is required</p>
+            <label for="name">Name</label>
+            <input type="text" required class="form-control" id="name" [(ngModel)] = "newQuote.name" name="name" #name = "ngModel">
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+              <p>Name is required</p>
             </div>
           
-  {{newQuote.genre}}
+  {{newQuote.name}}
 
         </div>
         <div class="form-group">
@@ -34,10 +34,10 @@
         <div class="form-group">
   
             <label for="postedBy">Posted By</label>
-            <input type="text" required class="form-control" id="postedBy" rows="4" [(ngModel)] = "newQuote.authorName" #authorName = "ngModel"  required>
-  {{newQuote.authorName}}
-  <div [hidden]="authorName.valid || authorName.pristine" class="alert alert-danger">
-    <p>AuthorName is required</p>
+            <input type="text" required class="form-control" id="postedBy" rows="4" [(ngModel)] = "newQuote.userName" name="userName" #userName = "ngModel"  required>
+  {{newQuote.userName}}
+  <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+    <p>UserName is required</p>
   </div>
 
 

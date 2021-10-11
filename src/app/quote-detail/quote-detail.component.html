@@ -1,4 +1,5 @@
-<p>{{quote.description}}</p>
+<h6 class="card-subtitle mb-2 text-muted"> ~ {{quote.title}}<br><span id="when">Posted  {{quote.dateCreated | datePassed}} days ago</span> </h6>
+
 <div class="detail-buttons">
 
 <button (click)='vote()'>{{quote.likes}} <i class="fa fa-thumbs-up"></i></button> 
