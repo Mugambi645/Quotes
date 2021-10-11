@@ -16,6 +16,11 @@ export class QuoteComponent implements OnInit {
     new Quote( "Freedom Of Mind", "Stephen Hawking", "Although i cannot move and i have to speak through a computer, in my mind i am free", "David",  0, 0, new Date(2018, 5,7))
 
   ]
+  get quotesSort() {
+    return this.quote.sort((x, y) => {
+      return <any>new Date(y.dateCreated) - <any>new Date(x.dateCreated);
+    })
+  }
   //hide and reveal info
   toggleDetails(index: any) {
     this.quote[index].showDescription = !this.quote[index].showDescription;

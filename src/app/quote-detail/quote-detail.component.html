@@ -2,7 +2,7 @@
 
 <div class="detail-buttons">
 
-<button (click)='vote()'>{{quote.likes}} <i class="fa fa-thumbs-up"></i></button> 
-  <button (click)='downVote()'>{{quote.dislikes}} <i class="fa fa-thumbs-down"></i></button>
+<button id="like" (click)='vote()'>{{quote.likes}} <i class="fa fa-thumbs-up"></i></button> 
+  <button id="dislike" (click)='downVote()'>{{quote.dislikes}} <i class="fa fa-thumbs-down"></i></button>
   <button id="delete" (click) = "quoteDelete(true)" ><i class="fa fa-trash"></i></button>
   </div>

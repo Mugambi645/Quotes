@@ -1,11 +1,9 @@
 import { hostViewClassName } from '@angular/compiler';
 import { Directive, ElementRef, HostListener } from '@angular/core';
-
 @Directive({
-  selector: '[appHighestVote]'
+  selector: '[appHighlight]'
 })
-export class HighestVoteDirective {
-
+export class HighlightDirective {
 
   constructor(private elem: ElementRef) { }
 
@@ -19,3 +17,4 @@ export class HighestVoteDirective {
     this.elem.nativeElement.style.color = action;
   }
 }
+

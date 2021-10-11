@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
-import { HighestVoteDirective } from './highest-vote.directive';
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
 import { DatePassedPipe } from './date-passed.pipe';
+import { HighlightDirective } from './highlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteFormComponent,
     QuoteDetailComponent,
-    HighestVoteDirective,
     DateCountPipe,
-    DatePassedPipe
+    DatePassedPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

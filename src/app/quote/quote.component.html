@@ -10,9 +10,9 @@
       </div>
       <div class="col-sm-9">
         <div class="all-cards">
-        <div *ngFor='let quote of quote let i = index' class="card" style="width: 24rem;">
+        <div *ngFor='let quote of quotesSort let i = index' class="card" style="width: 24rem;">
           <div class="card-body">
-              <h6 class="card-title" id={{i}} >{{quote.title}} <button id="see-more" class="btn btn-info btn-sm" (click) = "toggleDetails(i)">See More</button>
+              <h6 class="card-title" appHighlight id={{i}} >{{quote.title}} <button id="see-more" class="btn btn-info btn-sm" (click) = "toggleDetails(i)">See More</button>
               </h6>
               <p class="card-text" id="param">{{quote.name}}</p>
            {{quote.quote}} <br>
